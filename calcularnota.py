@@ -24,3 +24,5 @@ if notaAdmision >= 5 :
      print("entraste a Informática")
 if notaAdmision <= 5 :
      print("entraste a Informática")
+
+     
