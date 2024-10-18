@@ -1,3 +1,5 @@
+#se pueden modificar, meter y sacar elemntos
+
 miLista = [1,2,3,4] #1=posicion 0; 2= posicion 1 ...
 
 print(miLista)
