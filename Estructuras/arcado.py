@@ -17,15 +17,22 @@ while seguirJugando == True:
             print(letra, end="") #end="" es para que no salga en columna la palabra si no en fila
         else: 
             print("_",end="")
-letraPedida = input("Dime una letra\n") # \n salta la línea en la terminal
+    letraPedida = input("Dime una letra\n") # \n salta la línea en la terminal
 
-if letraPedida in palabraSecreta:
-    letrasCorrectas.append(letraPedida)
-else:
-    letrasIncorrectas.append(letraPedida)
+    if letraPedida in palabraSecreta:
+       letrasCorrectas.append(letraPedida)
+    else:
+     letrasIncorrectas.append(letraPedida)
 
-    print(f"correctas: {letrasCorrectas}")
-    print(f"correctas: {letrasIncorrectas}")
+     print(f"correctas: {letrasCorrectas}")
+     print(f"incorrectas: {letrasIncorrectas}")
 
-if set(letrasCorrectas) == set(palbraSecreta):
+    if set(letrasCorrectas) == set(palabraSecreta):
+            seguirJugando = False 
+            print("Has ganado")
+    if len(letrasIncorrectas) ==6:
+            seguirJugando=False
+            print("Has perdido")
+            print(f"La palabra era:{palabraSecreta}")
+
 
