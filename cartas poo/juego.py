@@ -32,3 +32,8 @@ if __name__ == "__main__":
     print("JUEGO DE 21")
     juego = Juego()
     juego.jugar()
+
+
+
+
+

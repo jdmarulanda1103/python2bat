@@ -6,6 +6,7 @@ class Mano:
         self.valor=0
     def añadirCarta(self,carta):
         self.cartas.append(carta)
+        self.valor=0
         for carta in self.cartas:
             if carta.valor in ["Jota","Reina","Rey"]:
                 self.valor = 10
